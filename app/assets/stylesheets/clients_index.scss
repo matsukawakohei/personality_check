@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  height: 20vh;
+  background-color: greenyellow;
+}
+
+.main {
+  height: 60vh;
+  background-color: yellow;
+}
+
+.footer {
+  height: 20vh;
+  background-color: aqua;
+}
