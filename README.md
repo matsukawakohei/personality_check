@@ -71,4 +71,66 @@ has_many :bigfives
 has_many :comments
 belongs_to :user
 
+## egogramsテーブル
 
+|Column|Type|Options|
+|------|----|-------|
+|client_id|references|null: false|
+|no1|integer|null: false|
+|no2|integer|null: false|
+|no3|integer|null: false|
+|no4|integer|null: false|
+|no5|integer|null: false|
+|no6|integer|null: false|
+|no7|integer|null: false|
+|no8|integer|null: false|
+|no9|integer|null: false|
+|no10|integer|null: false|
+|no11|integer|null: false|
+|no12|integer|null: false|
+|no13|integer|null: false|
+|no14|integer|null: false|
+|no15|integer|null: false|
+|no16|integer|null: false|
+|no17|integer|null: false|
+|no18|integer|null: false|
+|no19|integer|null: false|
+|no20|integer|null: false|
+|no21|integer|null: false|
+|no22|integer|null: false|
+|no23|integer|null: false|
+|no24|integer|null: false|
+|no25|integer|null: false|
+|no26|integer|null: false|
+|no27|integer|null: false|
+|no28|integer|null: false|
+|no29|integer|null: false|
+|no30|integer|null: false|
+|no31|integer|null: false|
+|no32|integer|null: false|
+|no33|integer|null: false|
+|no34|integer|null: false|
+|no35|integer|null: false|
+|no36|integer|null: false|
+|no37|integer|null: false|
+|no38|integer|null: false|
+|no39|integer|null: false|
+|no40|integer|null: false|
+|no41|integer|null: false|
+|no42|integer|null: false|
+|no43|integer|null: false|
+|no44|integer|null: false|
+|no45|integer|null: false|
+|no46|integer|null: false|
+|no47|integer|null: false|
+|no48|integer|null: false|
+|no49|integer|null: false|
+|no50|integer|null: false|
+|cp|integer|null: false|
+|np|integer|null: false|
+|a|integer|null: false|
+|fc|integer|null: false|
+|ac|integer|null: false|
+
+### Association
+belongs_to :client
