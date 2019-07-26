@@ -134,3 +134,26 @@ belongs_to :user
 
 ### Association
 belongs_to :client
+
+## bigfivesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|client_id|references|null: false|
+|no1|integer|null: false|
+|no2|integer|null: false|
+|no3|integer|null: false|
+|no4|integer|null: false|
+|no5|integer|null: false|
+|no6|integer|null: false|
+|no7|integer|null: false|
+|no8|integer|null: false|
+|no9|integer|null: false|
+|no10|integer|null: false|
+|extroversion|integer|null: false|
+|cooperativeness|integer|null: false|
+|integrity|integer|null: false|
+|neurotic_tendency|integer|null: false|
+|openness|integer|null: false|
+
+### Association
+belongs_to :client
