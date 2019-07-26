@@ -33,4 +33,16 @@ Things you may want to cover:
 |phone_number|integer|null: false|
 
 ### Association
-has_many comment
+has_many :comments
+
+## commentsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|references|null: false|
+|client_id|references|null: false|
+
+### Association
+belongs_to :user
+belongs_to :client
