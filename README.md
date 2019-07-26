@@ -65,7 +65,10 @@ belongs_to :client
 |finding|text||
 |user_id|references|null: false|
 
+### Association
 has_many :egograms
 has_many :bigfives
 has_many :comments
 belongs_to :user
+
+
