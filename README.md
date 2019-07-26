@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+|phone_number|integer|null: false|
+
+### Association
+has_many comment
