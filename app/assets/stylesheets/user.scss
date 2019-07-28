@@ -1,14 +1,12 @@
 .account-page {
+  width: 100%;
   .account-page__inner {
-    width: 980px;
-    margin: 60px auto;
-    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 
     .account-page__inner--left, .account-page__inner--right {
-      float: left;
       width: 50%;
     }
     &:after {
@@ -35,13 +33,12 @@
     }
 
     h5 {
-      margin-bottom: 20px;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 200;
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 10px;
       color: #fff;
       background-color: #ccc;
       font-size: 14px;
@@ -74,7 +71,7 @@
   .btn {
     display: inline-block;
     height: 50px;
-    padding: 0 30px;
+    padding: 0 15px;
     line-height: 50px;
     letter-spacing: 1px;
     text-align: center;
