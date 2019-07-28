@@ -4,10 +4,9 @@
       タイトル
     .login_user
       %span.login_user__text
-        〇〇さん
+        = "#{current_user.name}さん"
     .user_chenge
-      %span.user_change__text
-        ユーザー切替
+      = link_to "ユーザー切替", destroy_user_session_path, method: :delete, class: 'btn'
   .main
     .clients_content
       %h3.clients_content__text
@@ -79,3 +78,4 @@
             %td.client_show_link 詳細
           
   .footer
+    
