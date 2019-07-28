@@ -17,7 +17,7 @@
         %button.button
           検索
       .clients_new
-        クライエント登録
+        = link_to "クライエント登録", new_client_path, method: :get, class: 'btn'
     .clients_list
       .clients_box
         %table.clients_table
