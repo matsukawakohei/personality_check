@@ -1,5 +1,7 @@
 .content
   .header
+    %h2.header__text
+      タイトル
     .login_user
       %span.login_user__text
         〇〇さん
@@ -7,7 +9,73 @@
       %span.user_change__text
         ユーザー切替
   .main
-    .clients_list
-      %span.clients_list__text
+    .clients_content
+      %h3.clients_content__text
         クライエントリスト
+    .clients_menu
+      .clients_search
+        %input
+        %button.button
+          検索
+      .clients_new
+        クライエント登録
+    .clients_list
+      .clients_box
+        %table.clients_table
+          %tr
+            %th.client_name 名前
+            %th.client_sex 性別
+            %th.client_age 年齢
+            %th.client_show_link
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          %tr
+            %td.client_name 〇〇 〇〇
+            %td.client_sex 男
+            %td.client_age 28
+            %td.client_show_link 詳細
+          
   .footer

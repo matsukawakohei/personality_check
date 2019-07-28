@@ -11,16 +11,103 @@ html {
 }
 
 .header {
+  @include clearfix();
   height: 10vh;
+  position: relative;
+  text-align: center;
   background-color: greenyellow;
+  &__text {
+  }
+}
+
+.login_user {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  &__text {
+
+  }
+}
+
+.user_chenge{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  &__text {
+
+  }
 }
 
 .main {
-  height: 70vh;
+  height: 80vh;
+  width: 100%;
   background-color: yellow;
 }
 
+.clients_content {
+  text-align: center;
+  &__text {
+
+  }
+}
+
+.clients_menu {
+  @include clearfix();
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.clients_search{
+  float: left;
+}
+.clients_new {
+  float: right;
+
+}
+
+.clients_list {
+  margin: 20px 0 auto;
+}
+
+.clients_box {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.clients_table {
+  border: 1px solid #333;
+  margin: 0 auto;
+  width: 80%;
+  th {
+    border: 1px solid #333;
+    height: 5.5vh;
+    text-align: center;
+  }
+  
+  td {
+    border: 1px solid #333;
+    height: 5.5vh;
+    text-align: center;
+  }
+}
+
+.client_name {
+  width: 40%;
+}
+
+.client_sex {
+  width: 15%;
+}
+
+.client_age {
+  width: 15%;
+}
+
+.client_show_link {
+  width: 20%;
+}
+
+
 .footer {
-  height: 20vh;
+  height: 10vh;
   background-color: aqua;
 }
