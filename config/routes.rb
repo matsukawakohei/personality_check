@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   resources :clients, only: [:index] do
   end
 
+  resources :users, only: [:edit, :update] do
+  end
+
 end
