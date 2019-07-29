@@ -1,0 +1,35 @@
+.content
+  .header
+    %h2.header__text
+      タイトル
+    .login_user
+      %span.login_user__text
+        = "#{current_user.name}さん"
+    .user_chenge
+      = link_to "ユーザー切替", destroy_user_session_path, method: :delete, class: 'btn'
+  .clients_new_form
+    = form_for @client do |f|
+      .new_name_form
+        %span 氏名(漢字)
+        = f.text_field :first_name,placeholder: "姓(漢字)"
+        = f.text_field :last_name,placeholder: "名(漢字)"
+      .new_name_katakana_form
+        %span 氏名(カナ)
+        = f.text_field :first_name_katakana,placeholder: "姓(カナ)"
+        = f.text_field :last_name_katakana,placeholder: "名(カナ)"
+      .new_birthday_form
+        %span 生年月日
+        = f.number_field :birthday,placeholder: "例) 19900101"
+        = f.number_field :age
+      .new_sex_form
+        %span 性別
+        = f.select :sex,[["男","男"],["女","女"]],prompt: "----"
+      .new_job_form
+        %span 職業
+        = f.select :job_industry, Client.job_industries_i18n.map {|k| [Client.job_industries_i18n[k], [k]]}, prompt: "---"
+        = f.select :job_type, Client.job_types_i18n.map {|k| [Client.job_types_i18n[k], [k]]}, prompt: "---"
+      .new_academic_form
+        %span 学歴
+        = f.select :academic_background, Client.academic_backgrounds_i18n.map {|k| [Client.academic_backgrounds_i18n[k], [k]]}, prompt: "---"
+      = f.number_field :user_id, value: current_user.id
+      = f.submit value: "登録する"
