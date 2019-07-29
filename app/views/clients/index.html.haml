@@ -26,56 +26,15 @@
             %th.client_sex 性別
             %th.client_age 年齢
             %th.client_show_link
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
-          %tr
-            %td.client_name 〇〇 〇〇
-            %td.client_sex 男
-            %td.client_age 28
-            %td.client_show_link 詳細
+          - @clients.each do |client|
+            %tr
+              %td.client_name
+                = "#{client.first_name} #{client.last_name}"
+              %td.client_sex
+                = "#{client.sex}"
+              %td.client_age
+                = "#{client.age}"
+              %td.client_show_link 詳細
           
   .footer
     
