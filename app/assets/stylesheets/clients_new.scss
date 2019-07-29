@@ -1,3 +1,6 @@
+input {
+  box-sizing: border-box;
+}
 .header_new {
   font-size: 22px;
   line-height: 10vh;
@@ -19,6 +22,7 @@
     float: left;
     height: 40px;
     margin-left: 15px;
+    padding-left: 10px;
     width: 140px;
   }
 }
@@ -40,11 +44,12 @@
     float: left;
     height: 40px;
     margin-left: 15px;
+    padding-left: 10px;
     width: 140px;
   }
   &__text--age {
     float: left;
-    height: 46px;
+    height: 40px;
     position: relative;
     width: 40px;
     span {
@@ -59,6 +64,7 @@
     float: left;
     height: 40px;
     margin-left: 15px;
+    padding-left: 13px;
     width: 50px;
   }
 }

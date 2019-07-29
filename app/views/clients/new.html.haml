@@ -5,15 +5,15 @@
   = form_for @client do |f|
     .new_name_box
       .new_name_box__text 氏名(漢字)
-      = f.text_field :first_name,placeholder: " 姓(漢字)",class: "new_name_box__form"
-      = f.text_field :last_name,placeholder: " 名(漢字)",class: "new_name_box__form"
+      = f.text_field :first_name,placeholder: "姓(漢字)",class: "new_name_box__form"
+      = f.text_field :last_name,placeholder: "名(漢字)",class: "new_name_box__form"
     .new_name_box
       .new_name_box__text 氏名(カナ)
-      = f.text_field :first_name_katakana,placeholder: " 姓(カナ)",class: "new_name_box__form"
-      = f.text_field :last_name_katakana,placeholder: " 名(カナ)",class: "new_name_box__form"
+      = f.text_field :first_name_katakana,placeholder: "姓(カナ)",class: "new_name_box__form"
+      = f.text_field :last_name_katakana,placeholder: "名(カナ)",class: "new_name_box__form"
     .new_birthday_box
       .new_birthday_box__text 生年月日
-      = f.number_field :birthday,placeholder: " 例) 19900101", class: "new_birthday_box__form"
+      = f.number_field :birthday,placeholder: "例) 19900101", class: "new_birthday_box__form"
       = f.number_field :age, class: "new_birthday_box__form--age"
       .new_birthday_box__text--age
         %span 歳
