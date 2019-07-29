@@ -1,0 +1,151 @@
+.header_new {
+  font-size: 22px;
+  line-height: 10vh;
+}
+.new_name_box {
+  @include clearfix();
+  margin: 20px auto;
+  width: 80%;
+  &__text {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 76px;
+  }
+  &__form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 140px;
+  }
+}
+
+.new_birthday_box {
+  @include clearfix();
+  margin: 20px auto;
+  width: 80%;
+  &__text {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 76px;
+  }
+  &__form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 140px;
+  }
+  &__text--age {
+    float: left;
+    height: 46px;
+    position: relative;
+    width: 40px;
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+    }
+  }
+  &__form--age {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 50px;
+  }
+}
+
+.new_sex_box {
+  @include clearfix();
+  margin: 20px auto;
+  width: 80%;
+  &__text {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 76px;
+  }
+  &__form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 60px;
+  }
+}
+
+.new_job_box {
+  @include clearfix();
+  margin: 20px auto;
+  width: 80%;
+  &__text {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 76px;
+  }
+  &__form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 140px;
+  }
+}
+
+.new_academic_box {
+  @include clearfix();
+  margin: 20px auto;
+  width: 80%;
+  &__text {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 76px;
+  }
+  &__form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    width: 140px;
+  }
+}
+
+.user_id_form {
+  display: none;
+}
+
+.submit_box {
+  margin: 30px auto;
+  width: 80%;
+  text-align: center;
+  &__button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 2px;
+  }
+}
