@@ -1,35 +1,32 @@
 .content
   .header
-    %h2.header__text
-      タイトル
-    .login_user
-      %span.login_user__text
-        = "#{current_user.name}さん"
-    .user_chenge
-      = link_to "ユーザー切替", destroy_user_session_path, method: :delete, class: 'btn'
-  .clients_new_form
-    = form_for @client do |f|
-      .new_name_form
-        %span 氏名(漢字)
-        = f.text_field :first_name,placeholder: "姓(漢字)"
-        = f.text_field :last_name,placeholder: "名(漢字)"
-      .new_name_katakana_form
-        %span 氏名(カナ)
-        = f.text_field :first_name_katakana,placeholder: "姓(カナ)"
-        = f.text_field :last_name_katakana,placeholder: "名(カナ)"
-      .new_birthday_form
-        %span 生年月日
-        = f.number_field :birthday,placeholder: "例) 19900101"
-        = f.number_field :age
-      .new_sex_form
-        %span 性別
-        = f.select :sex,[["男","男"],["女","女"]],prompt: "----"
-      .new_job_form
-        %span 職業
-        = f.select :job_industry, Client.job_industries_i18n.map {|k| [Client.job_industries_i18n[k], [k]]}, prompt: "---"
-        = f.select :job_type, Client.job_types_i18n.map {|k| [Client.job_types_i18n[k], [k]]}, prompt: "---"
-      .new_academic_form
-        %span 学歴
-        = f.select :academic_background, Client.academic_backgrounds_i18n.map {|k| [Client.academic_backgrounds_i18n[k], [k]]}, prompt: "---"
-      = f.number_field :user_id, value: current_user.id
-      = f.submit value: "登録する"
+    %h2.header_new
+      新規登録フォーム
+  = form_for @client do |f|
+    .new_name_box
+      .new_name_box__text 氏名(漢字)
+      = f.text_field :first_name,placeholder: " 姓(漢字)",class: "new_name_box__form"
+      = f.text_field :last_name,placeholder: " 名(漢字)",class: "new_name_box__form"
+    .new_name_box
+      .new_name_box__text 氏名(カナ)
+      = f.text_field :first_name_katakana,placeholder: " 姓(カナ)",class: "new_name_box__form"
+      = f.text_field :last_name_katakana,placeholder: " 名(カナ)",class: "new_name_box__form"
+    .new_birthday_box
+      .new_birthday_box__text 生年月日
+      = f.number_field :birthday,placeholder: " 例) 19900101", class: "new_birthday_box__form"
+      = f.number_field :age, class: "new_birthday_box__form--age"
+      .new_birthday_box__text--age
+        %span 歳
+    .new_sex_box
+      .new_sex_box__text 性別
+      = f.select :sex,[["男","男"],["女","女"]], { prompt: "-----" }, { class: "new_sex_box__form" }
+    .new_job_box
+      .new_job_box__text 職業
+      = f.select :job_industry, Client.job_industries_i18n.map {|k| [Client.job_industries_i18n[k], [k]]}, { prompt: "-----" }, { class: "new_job_box__form" }
+      = f.select :job_type, Client.job_types_i18n.map {|k| [Client.job_types_i18n[k], [k]]}, { prompt: "-----" }, { class: "new_job_box__form" }
+    .new_academic_box
+      .new_academic_box__text 学歴
+      = f.select :academic_background, Client.academic_backgrounds_i18n.map {|k| [Client.academic_backgrounds_i18n[k], [k]]}, { prompt: "-----" }, { class: "new_academic_box__form" }
+    = f.number_field :user_id, value: current_user.id, class: "user_id_form"
+    .submit_box
+      = f.submit value: "登録する", class: "submit_box__button"
