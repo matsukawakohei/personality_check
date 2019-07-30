@@ -1,1 +1,9 @@
-あああ
+.content
+  .header
+    %h2.header__text
+      = "#{@client.first_name} #{@client.last_name}さんの詳細情報"
+    .login_user
+      %span.login_user__text
+        = "#{current_user.name}さん"
+    .user_chenge
+      = link_to "ユーザー切替", destroy_user_session_path, method: :delete, class: 'btn'
