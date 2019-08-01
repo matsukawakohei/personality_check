@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   resources :users, only: [:edit, :update] do
   end
 
+  resources :egograms, only: [:new] do
+  end
+
 end
