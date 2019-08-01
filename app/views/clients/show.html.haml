@@ -1,1 +1,58 @@
-あああ
+.content
+  .header
+    %h2.header__text
+      = "#{@client.first_name} #{@client.last_name}さんの詳細情報"
+    .login_user
+      %span.login_user__text
+        = "#{current_user.name}さん"
+    .user_chenge
+      = link_to "ユーザー切替", destroy_user_session_path, method: :delete, class: 'btn'
+  .client_content
+    .client_info
+      %p.client_info__title クライエント情報
+      %table.client_info__table
+        %tr
+          %td 氏名
+          %td
+            = "#{@client.first_name} #{@client.last_name}"
+        %tr
+          %td カナ
+          %td 
+            = "#{@client.first_name_katakana} #{@client.last_name_katakana}"
+        %tr
+          %td 性別
+          %td
+            = "#{@client.sex}"
+        %tr
+          %td 年齢
+          %td
+            = "#{@client.age}"
+        %tr
+          %td 業種
+          %td
+            = "#{@client.job_industry}"
+        %tr
+          %td 職種
+          %td
+            = "#{@client.job_type}"
+        %tr
+          %td 学歴
+          %td
+            = "#{@client.academic_background}"
+        %tr
+          %td 担当
+          %td
+            =@user.name
+    .test_info
+      %p.test_info__title 心理検査結果
+      %table.test_info__table
+        %tr
+          %td エゴグラム
+          %td エゴグラムのタイプ
+          %td 詳細
+        %tr
+          %td ビックファイブ
+          %td ビックファイブの結果
+          %td 詳細
+  .footer
+    = link_to '一覧ページへ', root_path

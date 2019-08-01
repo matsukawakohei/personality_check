@@ -13,6 +13,11 @@ class ClientsController < ApplicationController
     @client.save
   end
 
+  def show
+    @client = Client.find(params[:id])
+    @user = @client.user
+  end
+
   private
 
   def client_params
