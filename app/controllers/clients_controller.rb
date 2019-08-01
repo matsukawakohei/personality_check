@@ -15,6 +15,7 @@ class ClientsController < ApplicationController
 
   def show
     @client = Client.find(params[:id])
+    @user = @client.user
   end
 
   private
