@@ -1,0 +1,2 @@
+class Egogram < ApplicationRecord
+end
