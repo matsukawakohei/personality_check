@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   root 'clients#index'
 
   resources :clients, only: [:index, :new, :create, :show] do
+    resources :egograms, only: [:new, :show] do
+    end
   end
 
   resources :users, only: [:edit, :update] do
   end
 
-  resources :egograms, only: [:new] do
-  end
 
 end
