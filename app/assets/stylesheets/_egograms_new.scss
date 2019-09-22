@@ -1,0 +1,49 @@
+.egogram_box {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.egogram_table {
+  width: 100%;
+  th {
+    border: 1px solid #ccc;
+    height: 30px;
+  }
+  td {
+    border: 1px solid #ccc;
+    height: 30px;
+  }
+  .question {
+    width: 45%;
+  }
+  .anser_y_n {
+    font-size: 12px;
+    text-align: center;
+    width: 15%;
+  }
+  .anser {
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+    width: 25%;
+  }
+  .question_text {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .radio_anser {
+    text-align: center;
+  }
+}
+
+.result_box {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.calc_button {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  width: 20%;
+}

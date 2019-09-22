@@ -1,0 +1,27 @@
+.content
+  .header
+    %h2.header__text
+      = "#{@client.first_name} #{@client.last_name}さん"
+  .egogram_box
+    = form_for @egogram, url: {action: :create} do |f|
+      %table.egogram_table
+        %tr
+          %th.question
+          %th.anser_y_n はい
+          %th.anser どちらでもない
+          %th.anser_y_n いいえ
+        = render "cp", {f: f}
+        = render "np", {f: f}
+        = render "a", {f: f}
+        = render "fc", {f: f}
+        = render "ac", {f: f}
+      .result_box
+        .result_list
+          = f.number_field :a, class: "hidden_form",id: "a"
+          = f.number_field :ac, class: "hidden_form", id: "ac"
+          = f.number_field :cp, class: "hidden_form", id: "cp"
+          = f.number_field :cp, class: "hidden_form", id: "fc"
+          = f.number_field :cp, class: "hidden_form", id: "np"
+          = f.number_field :client_id, class: "hidden_form", value:"#{@client.id}"
+        .calc_button
+          = f.submit "採点する"

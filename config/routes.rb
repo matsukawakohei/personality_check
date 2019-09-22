@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'clients#index'
 
   resources :clients, only: [:index, :new, :create, :show] do
-    resources :egograms, only: [:new, :show] do
+    resources :egograms, only: [:new, :show, :create] do
     end
   end
 
